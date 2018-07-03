@@ -15,6 +15,7 @@ class CreateImageUrlsTable extends Migration
     {
         Schema::create('image_urls', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('url')->unique();
             $table->timestamps();
         });
     }

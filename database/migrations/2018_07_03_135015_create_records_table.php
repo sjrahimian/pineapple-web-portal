@@ -15,9 +15,17 @@ class CreateRecordsTable extends Migration
     {
         Schema::create('records', function (Blueprint $table) {
           $table->increments('id');
-          $table->
+          $table->string('name');
+          $table->string('sci_class');
+          $table->string('inventor', 100);
+          $table->date('invented');
+          $table->integer('harvest');
+          $table->enum("pizza_comp", ['yes', 'no']);
           $table->enum('modified', ['yes', 'no']);
           $table->float('freshness');
+          $table->float('min', 8, 2);
+          $table->float('max', 8, 2);
+          $table->text('notes');
           $table->timestamps();
         });
     }

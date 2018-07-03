@@ -19,4 +19,4 @@ Route::get('/main', function () {
     return view('main');
 })->name('main');
 
-// Route::get('/search', 'SearchController@search')->name('search');
+Route::get('/search', 'SearchController@search')->name('search');

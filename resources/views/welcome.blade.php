@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {{ config(['app.name' => 'PA Library']) }}
+        {{ config(['app.name' => 'PAS Library']) }}
         <title>{{ config('app.name') }}</title>
 
         <!-- Fonts & Icons -->
@@ -27,7 +27,7 @@
         <div class="title">
           <img src="thumbnail.jpg">
           <strong>
-            PA Library
+            PAS Library
           </strong><br />Pineapple Archives
         </div>
 
@@ -46,13 +46,13 @@
       <div class="intro">
         <div class="col1"><h3>About Pineapple Futurives</h3>
           <p>
-          &emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar, justo tincidunt interdum consectetur, metus ipsum condimentum lorem, sed elementum neque ex at risus. Proin posuere condimentum venenatis. Aliquam metus risus, pharetra nec massa vel, vehicula malesuada tortor.
+          &emsp;&emsp;This speical purpose archive stores all the future information of pineapples on Pineappolis (you currently call it "Earth"). It has been sent back to you, the people of the past, to prepare you for the oncoming peace instigated by pineapples and Bora Bora. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar, justo tincidunt interdum consectetur, metus ipsum condimentum lorem, sed elementum neque ex at risus. Proin posuere condimentum venenatis. Aliquam metus risus, pharetra nec massa vel, vehicula malesuada tortor.
           <br /><br />&emsp;&emsp;Fusce sollicitudin ligula vel ullamcorper posuere. Vestibulum porttitor, ligula euismod ornare dignissim, velit felis fermentum lectus, sit amet pretium nisi felis ac dui. Nulla fringilla risus in enim elementum, ut posuere est tristique.
         </p>
         </div>
         <div class="col2"><h3>About Pineapple Library?</h3>
           <p>
-          &emsp;&emsp;Sometime in the near future (we can't tell you when) the world will peacefully conquered by the what is currently known as Bora Bora, and world peace will ensue. Due to the peace, we come to realize the power and magnitude of pineapples as more than just foodstuff. This library was established shortly after, to document all the uses of pineapples throughout the years, and sent back to the past to prepare people for peace on Pineappolis (you currently call it "Earth").
+          &emsp;&emsp;Sometime in the future (we can't tell you when) the world will be peacefully conquered by the what is currently known as Bora Bora, ushuring in ages upon ages of world of peace. Due to the years of peace, we come to realize the power and magnitude of pineapples as more than just foodstuff. The <i>Pineapple Agrarian Science (PAS) Library</i> was established shortly after, stores any information regarding to pineapples amassed throughout the ages.
           <br /><br />Sed et posuere sem, eget sollicitudin libero. Praesent eget enim ligula. Etiam mi urna, hendrerit vel ullamcorper ultricies, egestas vitae leo. Vivamus justo purus, fringilla ut dapibus ac, rhoncus eu dolor. Nullam sagittis sem metus, sit amet aliquet neque viverra ac. Donec rhoncus odio vitae hendrerit blandit. Sed scelerisque ligula et accumsan tincidunt.
           </p>
 
