@@ -1,0 +1,33 @@
+footer {
+  bottom: 0
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  margin: auto auto 0 auto;
+
+}
+
+footer.format-text{
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 19px;
+  /* background: #333;
+  border-top: 2px solid #888; */
+  background: #009BE2;
+  border-top: 3px solid #82CAF3;
+}
+
+footer.format-text a{
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+footer.format-text a:hover{
+  color: lightgrey;
+}
