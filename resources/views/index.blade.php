@@ -6,14 +6,11 @@
 <div class="container">
   <div style="margin-left: 5%;">
     <p>
-      @if(isset($users))
-      Displaying {{ "ABC" }} - {{ "XYZ" }} of
-      @endif
-      {{ "XYZ" }} results for <b> "{{ $query }}" </b>.
+      Displaying results for <b> "{{ $query }}" </b>.
     </p>
   </div>
 
-  @if(isset($users))
+  @if(count($results) != 0)
   <table id="results" class="display" style="width:100%">
     <thead>
       <tr>
@@ -26,13 +23,13 @@
     </thead>
 
     <tbody>
-      @foreach($users as $user)
+      @foreach($results as $result)
       <tr>
-        <td>{{ $user->id }}</td>
-        <td><a href="#route('artifact.show', $user->id)">{{ $user->name }}</a></td>
-        <td>{{ $user->inventor }}</td>
-        <td>{{ $user->freshness }}/10</td>
-        <td>{{ $user->notes }}</td>
+        <td>{{ $result->id }}</td>
+        <td><a href="#route('artifact.show', $result->id)">{{ $result->name }}</a></td>
+        <td>{{ $result->inventor }}</td>
+        <td>{{ $result->freshness }}/10</td>
+        <td>{{ $result->notes }}</td>
       </tr>
       @endforeach
     </tbody>
@@ -49,13 +46,15 @@
 
 <!-- script for displaying search results -->
 @section('scriptDataTable')
-
-<script>
-  $(document).ready(function() {
-    $('#results').DataTable({
-      "searching": false
+  @if(count($results) != 0)
+  <script>
+    $(document).ready(function() {
+      $('#results').DataTable({
+        "order": [[ 1, "asc" ]],
+        "searching": false
+      });
     });
-  });
-</script>
+  </script>
+  @endif
 
 @endsection

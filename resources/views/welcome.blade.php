@@ -45,24 +45,24 @@
       </div>
       <div class="intro">
         <div class="col1">
-          <h3>About Pineapple Library?</h3>
+          <h3>&#127821;About Pineapple Library?</h3>
           <p>&emsp;&emsp;Sometime in the future (we can't tell you when) the world will be peacefully conquered by the what is currently known as Bora Bora, ushuring in ages upon ages of world of peace. Due to the years of peaceful warfar as Bora Bora expanded and conquered, scinentific research pushed the boundries of the primitive science that you call "contemporary science" and developed the power and magnitude of pineapples as more than just foodstuff. The <i>Pineapple Agrarian Science (PAS) Library</i> was established shortly after</p>
           <p>&emsp;&emsp;We store any information that is related to pineapples amassed throughout the ages.</p>
 
-          <h3>What have Pineapples done?</h3>
+          <h3>&#127821;What have Pineapples done?</h3>
           <p>&emsp;&emsp;They provide 90% of the worlds supply of fuel, terriestrial and in outerspace. Technology is built on pineapple hardware and software, with latter being developed using pineapple design systems.</p>
         </div>
         <div class="col2">
-          <h3>About Pineapple Futurives</h3>
+          <h3>&#x1F34D;About Pineapple Futurives</h3>
           <p>&emsp;&emsp;This speical purpose archive stores all the future information of pineapples on Pinearth (you currently call it "Earth"). It has been sent back to you, the people of the past, to prepare you for the oncoming peace instigated by pineapples and Bora Bora.</p>
 
-          <h3>What is "Futurives"?</h3>
+          <h3>&#x1F34D;What is "Futurives"?</h3>
           <p>&emsp;&emsp;Futurives are future archives. Ya tomato? (It's offenseive, as tangerines have been scientifically proven to be the stupdist of all fruit, and why it's only put into a salad).</p>
 
 
         </div>
       </div>
-      
+
 
       <!-- Footer -->
       @include('layouts.footer')

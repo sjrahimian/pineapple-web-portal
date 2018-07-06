@@ -18,8 +18,8 @@ class SearchController extends Controller{
     }
 
     //No critera
-    $users = "No results.";
-    return view('index', ['users' => [],'$query' => $key]);
+    $users = "Error";
+    return view('index', ['results' => [],'$query' => $key]);
 
   }
 
@@ -28,15 +28,15 @@ class SearchController extends Controller{
     // else sort is based on how it returns from query
     // to set up a default sort regardless of query got to config/columnsortable.php and set 'default_first_column' to true
     $users = Record::all();
-    return view('index', ['users' => $users, 'query' => '']);
+    return view('index', ['results' => $users, 'query' => '']);
   }
 
   public function getSomeData($key){
-    $users = Record::where('author','LIKE',"%".$key."%")
-        ->orwhere('title', 'LIKE',"%".$key."%")
-        ->orwhere('date', 'LIKE', "%".$key."%")->get();
+    $users = Record::where('name','LIKE',"%".$key."%")
+        ->orwhere('inventor', 'LIKE',"%".$key."%")
+        ->orwhere('notes', 'LIKE', "%".$key."%")->get();
 
-    return view('index', ['users' => $users, 'query' => $key]);
+    return view('index', ['results' => $users, 'query' => $key]);
 
   }
 

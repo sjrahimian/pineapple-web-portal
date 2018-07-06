@@ -93,18 +93,20 @@ form.container button:hover {
   font-weight: bold;
 }
 .col1{
-  width: 100%;
+  max-width: 30%;
   float: left;
   text-align: justify;
-  padding: 30px;
+  padding: 100px;
+  padding-right: 0px;
   /* background-color: red; */
 }
 
 .col2{
-  width: 100%;
+  max-width: 30%;
   float: right;
   text-align: justify;
-  padding: 30px;
+  padding: 100px;
+  padding-left: 200px;
 }
 
 img{
