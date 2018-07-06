@@ -15,6 +15,8 @@ $>mysql -u username -p pineapples < pineappleDB.sql
 
 ```
 
+Edit the .env file and add your mySQL username and password.
+
 To start program, make sure you have php and Laravel installed, then while in project root, rut:
 ```bash
 $>php artisan serv
