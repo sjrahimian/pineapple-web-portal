@@ -5,12 +5,8 @@ html, body {
   margin: 0;
   background: url(bckgrnd1.jpg) 50% 100%;
   background-size: cover;
-  color: #0082C6;
+  color: #96A361;
 }
-
-/* html {
-  overflow-y: scroll;
-} */
 
 .full-height {
   min-height: 100vh;
@@ -55,16 +51,14 @@ form.container button {
   padding: 15px;
   width: 100%;
   font-size: 17px;
-  /* background: #5b8cff; */
-  background: #009BE2;
+  background: #CFCE69;
   border: none;
   cursor: pointer;
   outline: none;
 }
 
 form.container button:hover {
-  /* background: #336dff; */
-  background: #0082C6;
+  background: #96A361;
 }
 
 .col-75 {
@@ -80,33 +74,39 @@ form.container button:hover {
 }
 
 .intro{
+  position: relative;
   width: auto;
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: center;
   position: relative;
-  background-color: #f5f8fa;
+  background-color: #E7DFDD;
   color: #000;
-
-  font-weight: bold;
+  font-family: 'Calibri', sans-seif;
 }
+
+.flexing{
+  min-height: 80vh;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .col1{
-  max-width: 30%;
+  width: 50%;
   float: left;
   text-align: justify;
-  padding: 100px;
-  padding-right: 0px;
-  /* background-color: red; */
+  margin-right: 170px;
 }
 
 .col2{
-  max-width: 30%;
+  width: 50%;
   float: right;
   text-align: justify;
-  padding: 100px;
-  padding-left: 200px;
+
 }
 
 img{
@@ -114,8 +114,19 @@ img{
 }
 
 
+@media screen and (max-width: 900px){
+  .flexing{
+    flex-direction: column;
+  }
+  .col1, .col2{
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+}
+
 @media screen and (max-width: 600px){
-  .col-25, .col-75, input[type=text], .col1, .col2 {
+  .col-25, .col-75, input[type=text] {
     width: 100%;
     margin: 0;
     box-sizing: border-box;

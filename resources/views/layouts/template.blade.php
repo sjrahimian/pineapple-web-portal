@@ -34,13 +34,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                  <!-- viewing individual artifacts would cause thumbnail logo image to break by adding /artifact/ to the URL -->
-                  @if(Request::is('artifact/*'))
-                    <img src="../thumbnail.jpg" style="height: 30px; margin-top: -5px;">
-                  @else
-                    <img src="thumbnail.jpg" style="height: 30px; margin-top: -5px;">
-                  @endif
-                    {{ config('app.name') }}
+                    &#x1F34D;{{ config('app.name') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -54,7 +48,7 @@
                       </li>
 
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ url('/main') }}">{{ __('How-To') }}</a>
+                          <a class="nav-link" href="{{ url('/main') }}">{{ __('Bananas') }}</a>
                       </li>
 
                       <li class="nav-item dropdown">

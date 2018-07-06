@@ -24,6 +24,8 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+Route::resource('item', 'ItemController');
+
 Route::get('/search', 'SearchController@search')->name('search');
 
 

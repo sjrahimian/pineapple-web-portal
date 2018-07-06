@@ -26,7 +26,7 @@
       @foreach($results as $result)
       <tr>
         <td>{{ $result->id }}</td>
-        <td><a href="#route('artifact.show', $result->id)">{{ $result->name }}</a></td>
+        <td><a href="{{ route('item.show', $result->id) }}">{{ $result->name }}</a></td>
         <td>{{ $result->inventor }}</td>
         <td>{{ $result->freshness }}/10</td>
         <td>{{ $result->notes }}</td>

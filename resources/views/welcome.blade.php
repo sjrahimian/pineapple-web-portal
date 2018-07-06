@@ -25,10 +25,7 @@
       <div class="flex-center full-height" role="form">
 
         <div class="title">
-          <img src="thumbnail.jpg">
-          <strong>
-            PAS Library
-          </strong><br />Pineapple future
+          <strong>&#x1F34D; PAS Library</strong><br />Pineapple Futurives
         </div>
 
         <form class="container" action="/search" method="get">
@@ -44,6 +41,7 @@
 
       </div>
       <div class="intro">
+        <div class="flexing">
         <div class="col1">
           <h3>&#127821;About Pineapple Library?</h3>
           <p>&emsp;&emsp;Sometime in the future (we can't tell you when) the world will be peacefully conquered by the what is currently known as Bora Bora, ushuring in ages upon ages of world of peace. Due to the years of peaceful warfar as Bora Bora expanded and conquered, scinentific research pushed the boundries of the primitive science that you call "contemporary science" and developed the power and magnitude of pineapples as more than just foodstuff. The <i>Pineapple Agrarian Science (PAS) Library</i> was established shortly after</p>
@@ -60,6 +58,7 @@
           <p>&emsp;&emsp;Futurives are future archives. Ya tomato? (It's offenseive, as tangerines have been scientifically proven to be the stupdist of all fruit, and why it's only put into a salad).</p>
 
 
+        </div>
         </div>
       </div>
 

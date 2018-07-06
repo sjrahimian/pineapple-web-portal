@@ -11,7 +11,7 @@ input[type="text"].search {
   height: 40px;
   float: left;
   padding: 10px;
-  border: 2px solid #82CAF3;  /* original colour:  #ECEEF0*/
+  border: 3px solid #CFCE69;  /* original colour:  #ECEEF0*/
   border-right: 0;
 }
 
@@ -22,13 +22,13 @@ button[type="submit"].search {
   border: none;
   cursor: pointer;
   z-index: 3;
-  background: #82CAF3; /* original colour:  #ECEEF0*/
-  border: 2px solid #82CAF3;  /* original colour:  #ECEEF0*/
+  background: #CFCE69; /* original colour:  #ECEEF0*/
+  border: 3px solid #CFCE69;  /* original colour:  #ECEEF0*/
   border-left: 0;
 }
 
 button[type="submit"].search:hover {
-  background: #009BE2; /* original colour: #d4d9dd */
+  background: #96A361; /* original colour: #d4d9dd */
 }
 
 @media screen and (max-width: 767.98px){
