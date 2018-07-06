@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    {{ config(['app.name' => 'PA Library']) }}
-    <title>{{ config('app.name') }}</title>
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  {{ config(['app.name' => 'PAS Library']) }}
+  <title>{{ config('app.name') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+  <!-- Scripts -->
+  <script src="{{ asset('js/app.js') }}"></script>
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 
-    <!-- Fonts & Icons -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- Fonts & Icons -->
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    <!-- CSS Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/template.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/search.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/artifact.css') }}" rel="stylesheet">
+  <!-- CSS Styles -->
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/template.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/search.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/artifact.css') }}" rel="stylesheet">
 
 </head>
 <body class="app-site">
@@ -33,9 +36,9 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                   <!-- viewing individual artifacts would cause thumbnail logo image to break by adding /artifact/ to the URL -->
                   @if(Request::is('artifact/*'))
-                    <img src="../thumbnail.png" style="height: 30px; margin-top: -5px;">
+                    <img src="../thumbnail.jpg" style="height: 30px; margin-top: -5px;">
                   @else
-                    <img src="thumbnail.png" style="height: 30px; margin-top: -5px;">
+                    <img src="thumbnail.jpg" style="height: 30px; margin-top: -5px;">
                   @endif
                     {{ config('app.name') }}
                 </a>
@@ -51,7 +54,7 @@
                       </li>
 
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ url('/main') }}">{{ __('Spatial Search') }}</a>
+                          <a class="nav-link" href="{{ url('/main') }}">{{ __('How-To') }}</a>
                       </li>
 
                       <li class="nav-item dropdown">
@@ -60,16 +63,16 @@
                           </a>
                           <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('docs') }}" name=>
-                              {{ __('Documents') }}
+                              {{ __('Classifed Pineapples') }}
                             </a>
                             <a class="dropdown-item" href="{{ route('maps') }}">
-                              {{ __('Maps') }}
+                              {{ __('Unclassifed Pineapples') }}
                             </a>
                           </div>
                       </li>
 
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ url('/main') }}">{{ __('Contact') }}</a>
+                          <a class="nav-link" href="{{ url('/contact') }}">{{ __('Contact') }}</a>
                       </li>
                     </ul>
 
@@ -88,7 +91,9 @@
         </nav>
 
         <main class="py-3">
-            @yield('content')
+          @yield('content')
+          {{-- Scripts --}}
+          @yield('scriptDataTable')
         </main>
     </div>
 

@@ -4,18 +4,9 @@
 @section('content')
 
 
-  <div class="container">
-    <div style="margin-left: 5%;">
-      <p>
-        @if($users->total() != 0)
-        Displaying {{ $users->firstItem() }} - {{ $users->lastItem() }} of
-        @endif
-        {{ $users->total() }} results for <b> "{{ $query }}" </b>.
-      </p>
-    </div>
-    <div style="background: green;">
 
-    </div>
+<div class="container">
+
     <div>
 
       <table id="example" class="display" style="width:100%">
@@ -30,6 +21,22 @@
                   </tr>
               </thead>
               <tbody>
+                <tr>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>61</td>
+                    <td>2011/04/25</td>
+                    <td>$320,800</td>
+                </tr>
+                <tr>
+                    <td>Zack Cox</td>
+                    <td>Giglo</td>
+                    <td>L0ndon</td>
+                    <td>69</td>
+                    <td>1935/04/25</td>
+                    <td>$696,969</td>
+                </tr>
                   <tr>
                       <td>Tiger Nixon</td>
                       <td>System Architect</td>
@@ -115,14 +122,6 @@
                   </tfoot>
                   </table>
 
-
-                  <script>
-                    $(document).ready(function() {
-                      $('#example').DataTable();
-                    } );
-                  </script>
     </div>
-
   </div>
-
 @endsection

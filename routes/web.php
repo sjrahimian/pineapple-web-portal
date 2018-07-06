@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -19,4 +20,17 @@ Route::get('/main', function () {
     return view('main');
 })->name('main');
 
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
 Route::get('/search', 'SearchController@search')->name('search');
+
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('docs');
+
+Route::get('/documents', function () {
+    return view('welcome');
+})->name('maps');
