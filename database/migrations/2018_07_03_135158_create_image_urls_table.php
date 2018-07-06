@@ -13,7 +13,7 @@ class CreateImageUrlsTable extends Migration
      */
     public function up()
     {
-        Schema::create('image_urls', function (Blueprint $table) {
+        Schema::create('imageurls', function (Blueprint $table) {
             $table->increments('id');
             $table->string('url')->unique();
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateImageUrlsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('image_urls');
+        Schema::dropIfExists('imageurls');
     }
 }

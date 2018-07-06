@@ -57,10 +57,10 @@
                           </a>
                           <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('docs') }}" name=>
-                              {{ __('Classifed Pineapples') }}
+                              {{ __('Take Me Home') }}
                             </a>
                             <a class="dropdown-item" href="{{ route('maps') }}">
-                              {{ __('Unclassifed Pineapples') }}
+                              {{ __('Take Me Home, Too: The Sequel') }}
                             </a>
                           </div>
                       </li>
