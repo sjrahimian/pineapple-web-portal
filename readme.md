@@ -1,4 +1,4 @@
-# Laravel Website: Pineapple Library Sciences :pineapple:
+# :pineapple: Laravel Website: Pineapple Library Sciences :pineapple:
 
 Created this website to learn Laravel for creating web portal from ground up (including design, model relationships, database, etc.) for digital archive project. Features a custom search and allows user to view individual project page.
 
@@ -11,13 +11,14 @@ After downloading cloning, cd into project root and run:
 
 ```bash
 
-$>mysql -u username -p pineapples < pineappleDB.sql
+$> mysql -u username -p pineapples < pineappleDB.sql
 
 ```
 
-Edit the .env file and add your mySQL username and password.
+Edit the .env.example file and add your mySQL username and password.
 
-To start program, make sure you have php and Laravel installed, then while in project root, rut:
+To start program, make sure you have php and Laravel installed, then while in project root run:
 ```bash
-$>php artisan serv
+$> mv .env.example .env
+$> php artisan serv
 ```
