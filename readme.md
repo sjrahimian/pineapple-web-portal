@@ -11,7 +11,7 @@ After downloading cloning, cd into project root and run:
 
 ```bash
 
-$> mysql -u username -p pineapples < pineappleDB.sql
+$ mysql -u username -p pineapples < pineappleDB.sql
 
 ```
 
@@ -19,6 +19,6 @@ Edit the .env.example file and add your mySQL username and password.
 
 To start program, make sure you have php and Laravel installed, then while in project root run:
 ```bash
-$> mv .env.example .env
-$> php artisan serv
+$ mv .env.example .env
+$ php artisan serv
 ```
